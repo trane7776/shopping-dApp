@@ -30,7 +30,7 @@ h2 {
   font-size: 2.15em;
 }
 
-h2:not(.product__overview h2) {
+h2:not(.product-overview h2) {
   padding-left: 20px;
 }
 
@@ -45,24 +45,24 @@ nav {
   background-color: var(--clr-bunker);
 }
 
-.nav__brand {
+.nav-brand {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav__brand img {
+.nav-brand img {
   max-width: 125px;
   height: auto;
 }
 
-.nav__brand h1 {
+.nav-brand h1 {
   color: var(--clr-white);
   font-family: "Lalezar";
   font-size: 2.5em;
 }
 
-.nav__links {
+.nav-links {
   background-color: var(--clr-ebony-clay);
   grid-column: 1 / span 3;
 
@@ -75,30 +75,30 @@ nav {
   list-style: none;
 }
 
-.nav__links li {
+.nav-links li {
   margin: 0 15px;
 }
 
-.nav__links li a {
+.nav-links li a {
   text-decoration: none;
   color: var(--clr-white);
 }
 
-.nav__links li a:hover {
+.nav-links li a:hover {
   color: var(--clr-orange);
 }
 
-.nav__search {
+.nav-search {
   padding: 10px;
   border-radius: 6px;
   min-width: 50%;
 }
 
-.nav__search:hover {
+.nav-search:hover {
   outline: 1px solid var(--clr-orange);
 }
 
-.nav__connect {
+.nav-connect {
   width: 150px;
   height: 40px;
   margin: 0 auto;
@@ -117,20 +117,20 @@ nav {
   transition: all 250ms ease;
 }
 
-.nav__connect:hover {
+.nav-connect:hover {
   background-color: var(--clr-orange-dark);
 }
 
 /* ------------------------------------------------------ */
 /* -- CARDS -- */
 
-.cards__section {
+.cards-section {
   max-width: 1200px;
   margin: 0 auto 50px;
   padding: 0 20px;
 }
 
-.cards__section h3 {
+.cards-section h3 {
   font-size: 1.75em;
   margin: 20px 0;
 }
@@ -158,17 +158,17 @@ nav {
   box-shadow: 0 0 5px var(--clr-grey);
 }
 
-.card__image {
+.card-image {
   position: absolute;
   width: 100%;
   z-index: -1;
 }
 
-.card__image img {
+.card-image img {
   max-width: 100%;
 }
 
-.card__info {
+.card-info {
   width: 100%;
 
   background-color: var(--clr-white);
@@ -180,18 +180,18 @@ nav {
   left: 0;
 }
 
-.card__info h4 {
+.card-info h4 {
   font-family: "Open Sans";
   font-size: 1.25em;
   font-weight: 400;
 }
 
-.card__info .rating {
+.card-info .rating {
   color: yellow;
   margin: 5px 0;
 }
 
-.card__info p {
+.card-info p {
   font-family: "Open Sans";
   font-size: 0.95em;
   font-weight: 600;
@@ -212,7 +212,7 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-.product__details {
+.product-details {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
   align-items: center;
@@ -231,16 +231,16 @@ nav {
   background: var(--clr-white);
 }
 
-.product__image {
+.product-image {
   max-width: 500px;
   margin: 20px auto;
 }
 
-.product__image img {
+.product-image img {
   max-width: 100%;
 }
 
-.product__close {
+.product-close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -254,27 +254,27 @@ nav {
   cursor: pointer;
 }
 
-.product__close img {
+.product-close img {
   width: 25px;
   height: 25px;
 }
 
-.product__overview {
+.product-overview {
   height: 90%;
   padding: 20px 40px 20px 20px;
 }
 
-.product__overview h2,
-.product__overview hr,
-.product__overview .rating {
+.product-overview h2,
+.product-overview hr,
+.product-overview .rating {
   margin: 10px auto;
 }
 
-.product__overview ul {
+.product-overview ul {
   margin-left: 40px;
 }
 
-.product__order {
+.product-order {
   max-width: 300px;
   height: 90%;
 
@@ -282,12 +282,12 @@ nav {
   padding: 20px;
 }
 
-.product__order h1,
-.product__order p {
+.product-order h1,
+.product-order p {
   margin-bottom: 10px;
 }
 
-.product__buy {
+.product-buy {
   width: 225px;
   height: 40px;
   margin: 20px 0;
@@ -306,22 +306,22 @@ nav {
   transition: all 250ms ease;
 }
 
-.product__buy:hover {
+.product-buy:hover {
   background-color: var(--clr-orange-dark);
 }
 
-.product__bought {
+.product-bought {
   padding: 5px;
   border: 1px solid var(--clr-grey);
 }
 
 @media screen and (max-width: 992px) {
-  .product__details {
+  .product-details {
     height: 95%;
     width: 90%;
   }
 
-  .product__order {
+  .product-order {
     max-width: 100%;
     height: 100%;
     margin-top: 20px;
@@ -334,22 +334,22 @@ nav {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav__links {
+  .nav-links {
     display: none;
   }
 
-  .nav__search {
+  .nav-search {
     display: none;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .product__details {
+  .product-details {
     height: 95%;
     overflow-y: scroll;
   }
 
-  .product__image {
+  .product-image {
     grid-column: span 2;
   }
 }
